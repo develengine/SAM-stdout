@@ -3,6 +3,8 @@ SAM
 
 Software Automatic Mouth - Tiny Speech Synthesizer 
 
+This version adds additional -stdout flag
+
 
 What is SAM?
 ============
@@ -12,7 +14,7 @@ It is an adaption to C of the speech software SAM (Software Automatic Mouth) for
 in the year 1982 by Don't Ask Software (now SoftVoice, Inc.). It includes a Text-To-Phoneme converter called reciter and a Phoneme-To-Speech routine for the 
 final output. It is so small that it will work also on embedded computers. On my computer it takes
 less than 39KB (much smaller on embedded devices as the executable-overhead is not necessary) of disk space and is a fully stand alone program. 
-For immediate output it uses the SDL-library, otherwise it can save .wav files. 
+For immediate output it uses the SDL-library, otherwise it can save .wav files and wrote to stdout.
 
 An online version and executables for Windows can be found on the web site: http://simulationcorner.net/index.php?page=sam
 
@@ -23,6 +25,8 @@ Simply type "make" in your command prompt.
 In order to compile without SDL remove the SDL statements from the CFLAGS and LFLAGS variables in the file "Makefile".
 
 It should compile on every UNIX-like operating system. For Windows you need Cygwin or MinGW( + libsdl).
+
+Additional scripts will not work on windows.
 
 Fork
 ====
