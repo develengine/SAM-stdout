@@ -1,0 +1,5 @@
+#! /bin/sh
+
+cp sam /usr/bin
+cp sam-say /usr/bin
+cp sam-read /usr/bin
